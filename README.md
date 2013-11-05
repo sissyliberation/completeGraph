@@ -5,7 +5,7 @@ completeGraph
 Description
 -----------
 
-Demonstrating Complete graphs using JavaScript and Canvas. 
+Demonstrating complete graphs using JavaScript and Canvas. 
 
 A complete graph is a simple undirected graph in which every pair of distinct vertices is connected by a unique edge.
 
