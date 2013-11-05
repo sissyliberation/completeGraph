@@ -1,12 +1,14 @@
 // Create the canvas
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth *.8 ;
-canvas.height = window.innerHeight*.8;
+canvas.width = window.innerWidth *.95 ;
+canvas.height = window.innerHeight*.95;
 document.body.appendChild(canvas);
 
 if(canvas.width > canvas.height)
 	canvas.width = canvas.height;
+if(canvas.height > canvas.width)
+	canvas.height = canvas.width;
 var radius = canvas.width/2 - 20;
 var nodes = 4;
 points(nodes);
