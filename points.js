@@ -27,6 +27,7 @@ function points(n)  {
 		for(var j = 0; j< n*2; j+=2) {
 			ctx.lineWidth = 2;
 			ctx.beginPath();
+			ctx.strokeStyle = '#fff';
 			ctx.moveTo(coords[i]+canvas.width/2, -1*coords[i+1]+canvas.width/2);
 			ctx.lineTo(coords[j]+canvas.width/2, -1*coords[j+1]+canvas.width/2);
 			ctx.stroke();
@@ -39,11 +40,11 @@ function points(n)  {
 		ctx.arc(coords[i]+canvas.width/2, -1*coords[i+1]+canvas.width/2, 8, 0, 2 * Math.PI, false);
 		ctx.fillStyle = 'red';	
 		ctx.fill();		
-		ctx.strokeStyle = '#000';
+		ctx.strokeStyle = '#fff';
 		ctx.stroke();
 		ctx.closePath();
 	}
-	ctx.fillStyle = "black";
+	ctx.fillStyle = '#fff';
     ctx.font = "24px Helvetica";
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
